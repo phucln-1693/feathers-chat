@@ -20,9 +20,7 @@ module.exports = function (options = {}) {
     // Override the original data (so that people can't submit additional stuff)
     context.data = {
       text,
-      // Set the user id
       userId: user._id,
-      // Add the current date
       createdAt: new Date().getTime()
     };
 
